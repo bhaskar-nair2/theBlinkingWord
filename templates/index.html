@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Blinking World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap4/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body class="index">
+<div class="top-holder">
+<div id="app"></div>
+</div>
+
+<div class="nav-holder">
+    <a class="link" href="{{ url_for('musings') }}">Musings.</a>
+    <a class="link" href="{{ url_for('compositions') }}">Compositions.</a>
+    <a class="link" href="{{ url_for('rhymes') }}">Rhymes.</a>
+    <a class="link" href="{{ url_for('about') }}">About Me.</a>
+</div>
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='bootstrap4/js/bootstrap.bundle.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/typewriter.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

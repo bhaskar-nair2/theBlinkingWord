@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Scriptin;
+    src: url("../fonts/SCRIPTIN.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: jam;
+    src: url("../fonts/Jamscript_TRIAL.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Antro;
+    src: url("../fonts/Antro_Vectra.otf") format('opentype');
+}
+
+/*For Mobile */
+@media (max-aspect-ratio: 6/5) {
+    .index {
+        display: grid;
+        grid-template-rows: 15vh 55vh 30vh;
+        grid-template-columns: 10vw 80vw 10vw;
+        background-color: #1C3060;
+    }
+
+    .top-holder {
+        grid-row: 2;
+        grid-column: 2;
+        background-color: #1C3060;
+    }
+
+    #app {
+        font-family: Antro;
+        word-spacing: 80vw;
+        font-size: 18vw;
+        color: #ffffff;
+        text-align: center;
+    }
+    .nav-holder {
+        grid-row: 3;
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+    }
+
+    .link {
+        font-family: Antro;
+        color: #ffffff;
+        font-size: 5vw;
+        text-shadow: 2px 2px 8px #E5D4B7;
+        text-align: center;
+    }
+
+    .link:hover {
+        color: #ffffff;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #E5D4B7;
+    }
+
+}
+
+/*For Computer*/
+@media (min-aspect-ratio: 6/5) {
+
+    .index {
+        display: grid;
+        grid-template-columns: 5vw repeat(8, 1fr) 5vw;
+        grid-template-rows: 10vh repeat(4, 20vh) 10vh;
+        background-color: #1C3060;
+    }
+
+    .top-holder {
+        grid-row: 3;
+        grid-column: 3 / 9;
+        background-color: #1C3060;
+
+    }
+
+    #app {
+        font-family: Antro;
+        font-size: 7.5vw;
+        color: #ffffff;
+    }
+    .typewriter-cursor{
+        color: #E2EB98;
+    }
+
+    .nav-holder {
+        grid-row: 5;
+        grid-column: 3 / 8;
+        display: grid;
+        grid-gap: 15vh;
+        grid-template-rows: 2.5vh 2vh;
+        grid-template-columns: repeat(4, 10vw);
+        align-content: center;
+    }
+
+    .link {
+        grid-row: 1;
+        grid-column: auto;
+        top: 50%;
+        text-align: center;
+        font-family: Antro;
+        color: #ffffff;
+        font-size: 2vw;
+        text-shadow: 2px 2px 8px #E5D4B7;
+        /*transform: translateX(-50%) translateY(-50%);*/
+    }
+
+    .link:hover {
+        color: #ffffff;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #E5D4B7;
+    }
+}
