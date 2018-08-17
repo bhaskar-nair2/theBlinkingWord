@@ -6,18 +6,78 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap4/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
 </head>
-<body class="index">
-<div class="top-holder">
-<div id="app"></div>
+<body data-spy="scroll" data-target="#scroll-spy">
+<div class="backgrounds overlay">
+    <div class="background" style="background-image: url('../static/img/bg.jpg');"></div>
 </div>
 
-<div class="nav-holder">
-    <a class="link" href="{{ url_for('musings') }}">Musings.</a>
-    <a class="link" href="{{ url_for('compositions') }}">Compositions.</a>
-    <a class="link" href="{{ url_for('rhymes') }}">Rhymes.</a>
-    <a class="link" href="{{ url_for('about') }}">About Me.</a>
+<header class="hero"  id="hero">
+    <div id="app-holder" class="app-holder">
+        <div class="app" id="app"></div>
+    </div>
+    <div class="link-holder" id="link-holder">
+        <a class="link" href="#musing">Musings.</a>
+        <a class="link" href="#rhymes">Rhymes.</a>
+        <a class="link" href="#compositions">Compositions.</a>
+        <a class="link" href="#About">About Me.</a>
+    </div>
+    <div class="scr-ani" id="scr-ani">
+        <em class="jst-scr" id="jst-scr">or, just scroll down</em>
+        <p class="chevron" id ="chev"></p>
+    </div>
+</header>
+
+<section class="musing" id="musing">
+    <div class="ms1-br">
+        <div class="musing1">
+            <p class="ms1">
+                So basically, You have to fill..<br><br><br><br><br>
+                Your favourite muse #1
+            </p>
+        </div>
+    </div>
+    <div class="ms2-br">
+        <span class="hr"></span>
+        <div class="musing2">
+            <p class="ms1">
+                <br><br><br><br><br>
+                Your favourite muse #2
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="container" style="grid-row:head2">
+    <h2 class="head" >
+        Rhyms
+    </h2>
 </div>
 
+<section class="rhymes" id="rhymes">
+    <div class="rhymes1"></div>
+    <div class="rhymes2"></div>
+</section>
+
+<div class="container" style="grid-row:head3">
+    <h2 class="head" >
+        Compositions
+    </h2>
+</div>
+
+<section class="compositions" id="compositions">
+    <div class="compositions1"></div>
+</section>
+<div class="container" style="grid-row:head4">
+    <h2 class="head" >
+        About Me
+    </h2>
+</div>
+<section class="about" id="about">
+    <div class="about-data"></div>
+</section>
+
+<footer class="footer">
+</footer>
 
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='bootstrap4/js/bootstrap.bundle.js') }}"></script>

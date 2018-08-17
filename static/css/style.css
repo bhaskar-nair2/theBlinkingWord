@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: jam;
-    src: url("../fonts/Jamscript_TRIAL.ttf") format('truetype');
+    font-family: khand;
+    src: url("../fonts/khand.ttf") format('truetype');
 }
 
 @font-face {
@@ -13,102 +13,275 @@
     src: url("../fonts/Antro_Vectra.otf") format('opentype');
 }
 
-/*For Mobile */
-@media (max-aspect-ratio: 6/5) {
-    .index {
-        display: grid;
-        grid-template-rows: 15vh 55vh 30vh;
-        grid-template-columns: 10vw 80vw 10vw;
-        background-color: #1C3060;
-    }
+@font-face {
+    font-family: Antro-B;
+    src: url("../fonts/Antro_Vectra_Bolder.otf") format('opentype');
+}
 
-    .top-holder {
-        grid-row: 2;
-        grid-column: 2;
-        background-color: #1C3060;
-    }
+body {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    grid-template-rows: [title]min-content 100vh [mus]120vh [head2]8vh [poem]150vh [head3]8vh [comp]175vh [head4]8vh [about]100vh [end]5vh;
+    grid-template-columns: 100vw;
+}
 
-    #app {
-        font-family: Antro;
-        word-spacing: 80vw;
-        font-size: 18vw;
-        color: #ffffff;
-        text-align: center;
-    }
-    .nav-holder {
-        grid-row: 3;
-        grid-column: 2;
-        display: grid;
-        grid-template-columns: 40vw 40vw;
-    }
+.backgrounds {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transform: translateZ(0);
+    z-index: -1;
+}
 
-    .link {
-        font-family: Antro;
-        color: #ffffff;
-        font-size: 5vw;
-        text-shadow: 2px 2px 8px #E5D4B7;
-        text-align: center;
-    }
+.background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+}
 
-    .link:hover {
-        color: #ffffff;
-        text-decoration: none;
-        text-shadow: 2px 2px 2px #E5D4B7;
-    }
+.overlay::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #3F51B5;
+    opacity: 0.8;
+}
+
+/*_________________HERO SECTION STARTS______________*/
+.hero {
+    grid-row: title;
+    grid-column: 1;
+    text-align: center;
+    display: grid;
+    z-index: 999;
+    position: fixed;
+    background-color: rgba(63, 81, 181, 0.2);
+}
+
+.app-holder {
+    grid-row: 1;
+}
+
+#app {
+    font-family: Antro-B;
+    word-spacing: 80vw;
+    font-size: 18vw;
+    color: #ffffff;
+}
+
+.link-holder {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 5vh [link] 8vh;
+    min-width: 100vw;
+    transition: all 1s ease-in-out
+}
+
+ul, li {
+    display: inline-block;
+}
+
+.link {
+    grid-row: link;
+    font-family: Antro;
+    color: #ffffff;
+    font-size: 5vw;
+    text-shadow: 2px 2px 8px #ffffff;
+    text-align: center;
 
 }
 
-/*For Computer*/
-@media (min-aspect-ratio: 6/5) {
+.link:hover {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #E5D4B7;
+}
 
-    .index {
-        display: grid;
-        grid-template-columns: 5vw repeat(8, 1fr) 5vw;
-        grid-template-rows: 10vh repeat(4, 20vh) 10vh;
-        background-color: #1C3060;
+.link:active {
+    border-bottom: white 2px solid;
+}
+
+.scr-ani {
+    grid-row: 3;
+    grid-template-rows: [sctx] 2vh [arr] 4vh;
+    grid-template-columns: 40vw [conte] auto;
+}
+
+.jst-scr {
+    grid-row: sctx;
+    grid-column: 1 /span all;
+    font-size: 2vh;
+    color: #000000;
+    text-align: center;
+}
+
+.chevron {
+    position: relative;
+    grid-row: arr;
+    grid-column: conte;
+    top: 100px;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    height: 6px;
+    width: 150px;
+    animation: ease-in-out 2s infinite pulse;
+}
+
+.chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: #FF4081;
+    -webkit-transform: skew(0deg, 20deg);
+    -moz-transform: skew(0deg, 20deg);
+    -ms-transform: skew(0deg, 20deg);
+    -o-transform: skew(0deg, 20deg);
+    transform: skew(0deg, 20deg);
+}
+
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #FF4081;
+    -webkit-transform: skew(0deg, -20deg);
+    -moz-transform: skew(0deg, -20deg);
+    -ms-transform: skew(0deg, -20deg);
+    -o-transform: skew(0deg, -20deg);
+    transform: skew(0deg, -20deg);
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
-
-    .top-holder {
-        grid-row: 3;
-        grid-column: 3 / 9;
-        background-color: #1C3060;
-
+    50% {
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
     }
-
-    #app {
-        font-family: Antro;
-        font-size: 7.5vw;
-        color: #ffffff;
-    }
-    .typewriter-cursor{
-        color: #E2EB98;
-    }
-
-    .nav-holder {
-        grid-row: 5;
-        grid-column: 3 / 8;
-        display: grid;
-        grid-gap: 15vh;
-        grid-template-rows: 2.5vh 2vh;
-        grid-template-columns: repeat(4, 10vw);
-        align-content: center;
-    }
-
-    .link {
-        grid-row: 1;
-        grid-column: auto;
-        top: 50%;
-        text-align: center;
-        font-family: Antro;
-        color: #ffffff;
-        font-size: 2vw;
-        text-shadow: 2px 2px 8px #E5D4B7;
-        /*transform: translateX(-50%) translateY(-50%);*/
-    }
-
-    .link:hover {
-        color: #ffffff;
-        text-decoration: none;
-        text-shadow: 2px 2px 2px #E5D4B7;
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
+
+.hero-shrink {
+    z-index: 9999;
+    top: 0;
+    position: fixed;
+}
+
+.link-holder-shrink {
+    grid-row: links;
+    display: grid;
+    grid-template-rows: 5vh [link] 5vh;
+}
+
+.scr-ani-shrink {
+    display: none;
+}
+
+.jst-scr-shrink {
+    display: none;
+}
+
+.chevron-shrink {
+    display: none;
+}
+
+/*_________________HERO SECTION OVER______________*/
+/*_________________MUSING PAGE STARTS______________*/
+.musing {
+    grid-row: mus;
+    display: grid;
+    grid-template-rows: [mus_1] 60vh [mus_2] 60vh;
+
+}
+
+.ms1-br {
+    grid-row: mus_1;
+    margin: 5vh;
+    background-color: white;
+    padding: 1.5vh;
+}
+
+.musing1 {
+    margin: 0;
+    height: 100%;
+    background-color: #202746;
+    padding: 2vh;
+}
+
+.ms1 {
+    text-align: left;
+    height: inherit;
+    width: inherit;
+    font-size: 2.5vh;
+    font-family: khand;
+    color: lightskyblue;
+}
+
+.ms2-br {
+    grid-row: mus_2;
+    margin: 5vh;
+    background-color: white;
+    padding: 1.5vh;
+}
+
+.musing2 {
+    margin: 0;
+    height: 100%;
+    background-color: #202746;
+    padding: 0.5vh;
+}
+
+.ms2 {
+    text-align: left;
+    height: inherit;
+    width: inherit;
+    font-size: 2.5vh;
+    font-family: khand;
+    color: lightskyblue;
+}
+
+/*_________________MUSING SECTION OVER______________*/
+/*_________________POEM SECTION STARTS______________*/
+.container {
+    width: 90vw;
+    max-width: 90%;
+}
+
+.head {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: #FFF;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    clear: both;
+}
+
+/*_________________POEM SECTION OVER______________*/
