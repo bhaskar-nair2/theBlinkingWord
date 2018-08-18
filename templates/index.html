@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
 </head>
 <body data-spy="scroll" data-target="#scroll-spy">
+
+<div class="preloader">
+    <div class="loader"></div>
+</div>
+
 <div class="backgrounds overlay">
     <div class="background" style="background-image: url('../static/img/bg.jpg');"></div>
 </div>
 
-<header class="hero"  id="hero">
+<header class="hero" id="hero">
     <div id="app-holder" class="app-holder">
         <div class="app" id="app"></div>
     </div>
     <div class="link-holder" id="link-holder">
-        <a class="link" href="#musing">Musings.</a>
-        <a class="link" href="#rhymes">Rhymes.</a>
-        <a class="link" href="#compositions">Compositions.</a>
-        <a class="link" href="#About">About Me.</a>
+        <a class="link link-1" href="#musing">Musings.</a>
+        <a class="link link-2" href="#rhymes">Rhymes.</a>
+        <a class="link link-3" href="#compositions">Compositions.</a>
+        <a class="link link-4" href="#About">About Me.</a>
     </div>
     <div class="scr-ani" id="scr-ani">
         <em class="jst-scr" id="jst-scr">or, just scroll down</em>
-        <p class="chevron" id ="chev"></p>
+        <p class="chevron" id="chev"></p>
     </div>
 </header>
 
@@ -31,54 +36,132 @@
     <div class="ms1-br">
         <div class="musing1">
             <p class="ms1">
-                So basically, You have to fill..<br><br><br><br><br>
-                Your favourite muse #1
+                So basically, You have to fill..
+                <br><br><br><br><br>
+                #1: Your favourite muse
             </p>
         </div>
     </div>
     <div class="ms2-br">
         <span class="hr"></span>
         <div class="musing2">
-            <p class="ms1">
-                <br><br><br><br><br>
-                Your favourite muse #2
+            <p class="ms2">
+                <br><br>
+                #2: Your 2nd favourite muse
+                <br><br><br><br>
+                The background is Crazzy right?
             </p>
         </div>
     </div>
 </section>
 
 <div class="container" style="grid-row:head2">
-    <h2 class="head" >
+    <h2 class="head">
         Rhyms
     </h2>
 </div>
-
 <section class="rhymes" id="rhymes">
-    <div class="rhymes1"></div>
-    <div class="rhymes2"></div>
+    <div class="rhymes1">
+        <p class="rh1">
+            <span class="rh-title">What is even a Poem, without a Title</span><br>
+            So I guess you have know that this one is for
+            <br><br>
+            #3: Your favourite poem, keep count of these things!!<br><br><br>
+
+            BTW, did I tell you that you look beautiful? <br>No.?
+            <br><br>
+            Well, you really do!
+        </p>
+    </div>
+    <div class="rhymes2">
+        <p class="rh2">
+            <span class="rh-title">Look, I know it's a lot of Work</span><br><br>
+            and you are a hardworking, really busy chick<br>
+            <br>
+            But do this one for B-fren<br>
+            <br>
+            You know what, you can write about me too,<br>
+            It always makes me happy :P<br>
+            So we need here
+
+            #4: Your 2nd favourite Poem!
+        </p>
+    </div>
 </section>
 
 <div class="container" style="grid-row:head3">
-    <h2 class="head" >
+    <h2 class="head">
         Compositions
     </h2>
 </div>
 
 <section class="compositions" id="compositions">
-    <div class="compositions1"></div>
+    <div class="compositions1">
+        <div class="comp">
+        <span class="comp-title">
+        And, before I forget..
+        </span><br>
+            <p class="comp-content">
+                Most of the things are customizable<br>
+                Which means, you don't need to take out time from your <i style="color: darkorange">Busy Schedule</i>
+                and <i style="color: darkorange">call me</i> to change a
+                single spelling :P<br><br>
+                But don't hesitate to call for any non-customizable elements, including animations and designs. Fell
+                free to send you own designs too,
+                honestly just takes me a second to change most of it.<br><br>
+                Also, musings and poems are generally small, so we can manage to fit them, but compositions are HUGE!
+                But don't worry, I added a MORE button at the end to link to any
+                page/website/blog you want.
+
+                To edit these, just add '/manage', without quotes, to the url in the address bar.<br>
+                If that was too much English for you to understand, just go to ADD-WEBSITE-NAME-HERE.EXTENTION/manage
+                {#            TODO: ADD WEBSITE LINK AND ADD PASSWORD FOR ACCESS#}
+                or, just click on more for now<br>
+                And obviously, you'll need a password. it's a hard-coded one (non-customizable), so don't forget
+                it!!<br>
+                Password:
+                {#            TODO: ADD PASSWORD HERE!!#}
+                <br><br>
+                And, finally we have at
+                <br>
+                #5: Your favourite Composition!<br><br>
+                <i style="color: darkorange">Exactly 5, so that you don't forget the date again...</i>
+            </p>
+            <a class="comp-more" style="color: darkorange" href="">More...</a>
+
+        </div>
+    </div>
 </section>
-<div class="container" style="grid-row:head4">
-    <h2 class="head" >
-        About Me
-    </h2>
-</div>
+
 <section class="about" id="about">
-    <div class="about-data"></div>
+    <div class="about-data">
+        <div class="abhe">
+            <h2 class="head">
+                About Me
+            </h2>
+        </div>
+        <div class="ab-frame">
+            <div class="img-wrap">
+                <img class="about-img"
+                     src="{{ url_for('static',filename='img/dp.jpeg') }}">
+                {#                     src="https://instagram.fmaa1-1.fna.fbcdn.net/vp/49df6cd2ffc66c4009811389749d4acf/5C07FC2C/t51.2885-15/sh0.08/e35/s640x640/36784505_545653679171346_6826440107097063424_n.jpg"/>#}
+            </div>
+            <div class="abcont-wrap">
+                <p class="abcont-1">I like keeping</p>
+                <p class="abcont-4">Aditi</p>
+            </div>
+            <p class="abcont-2">it to Myself</p>
+            <p class="abcont-3">Unless, we are<br>Friends...</p>
+            <p class="abcont-5">Sharma</p>
+        </div>
+        <div class="bookmark">
+            <a class="bookmark-cover" href="https://www.instagram.com/theblinkingword/?hl=en">
+                <img class="bookmrk-img" src="{{ url_for('static' ,filename="img/insta.png") }}"/>
+            </a>
+        </div>
+
+    </div>
 </section>
-
-<footer class="footer">
-</footer>
-
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='bootstrap4/js/bootstrap.bundle.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/typewriter.js') }}"></script>

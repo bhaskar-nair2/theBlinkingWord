@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: khand;
-    src: url("../fonts/khand.ttf") format('truetype');
+    src: url("../fonts/Route Du Soleil DEMO.otf") format('opentype');
 }
 
 @font-face {
@@ -24,10 +24,107 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    grid-template-rows: [title]min-content 100vh [mus]120vh [head2]8vh [poem]150vh [head3]8vh [comp]175vh [head4]8vh [about]100vh [end]5vh;
+    grid-template-rows: [title] min-content 100vh [mus] 120vh [head2] 20vh [poem] 150vh [head3] 20vh [comp] 175vh [about] 100vh;
     grid-template-columns: 100vw;
 }
 
+.preloader {
+    grid-row: title;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    background-color: rgba(63, 81, 181, 0.8);
+    z-index: 99999;
+}
+
+.loader {
+    color: #ffffff;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@-webkit-keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+
+@keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+
+@-webkit-keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*_________________BACKGROUNDS SECTION STARTS______________*/
 .backgrounds {
     width: 100%;
     height: 100%;
@@ -54,10 +151,12 @@ body {
     bottom: 0;
     top: 0;
     background: #3F51B5;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
-/*_________________HERO SECTION STARTS______________*/
+/*_________________BACKGROUNDS SECTION STARTS______________*/
+
+/*_________________HERO SECTION STARTS_____________________*/
 .hero {
     grid-row: title;
     grid-column: 1;
@@ -66,6 +165,7 @@ body {
     z-index: 999;
     position: fixed;
     background-color: rgba(63, 81, 181, 0.2);
+    /*transition: all 0.4s ease-in-out;*/
 }
 
 .app-holder {
@@ -77,28 +177,42 @@ body {
     word-spacing: 80vw;
     font-size: 18vw;
     color: #ffffff;
+    /*transition: all 0.3s ease-in-out;*/
 }
 
 .link-holder {
     grid-row: 2;
     display: grid;
-    grid-template-rows: 5vh [link] 8vh;
+    grid-template-areas: ". link-1 . link-2 ." ". link-3 . link-4 .";
     min-width: 100vw;
-    transition: all 1s ease-in-out
 }
 
 ul, li {
     display: inline-block;
 }
 
+.link-1 {
+    grid-area: link-1;
+}
+
+.link-2 {
+    grid-area: link-2;
+}
+
+.link-3 {
+    grid-area: link-3;
+}
+
+.link-4 {
+    grid-area: link-4;
+}
+
 .link {
-    grid-row: link;
     font-family: Antro;
     color: #ffffff;
     font-size: 5vw;
     text-shadow: 2px 2px 8px #ffffff;
     text-align: center;
-
 }
 
 .link:hover {
@@ -112,12 +226,15 @@ ul, li {
 }
 
 .scr-ani {
+    display: grid;
+    opacity: 0;
     grid-row: 3;
     grid-template-rows: [sctx] 2vh [arr] 4vh;
     grid-template-columns: 40vw [conte] auto;
 }
 
 .jst-scr {
+    opacity: 0;
     grid-row: sctx;
     grid-column: 1 /span all;
     font-size: 2vh;
@@ -126,6 +243,7 @@ ul, li {
 }
 
 .chevron {
+    opacity: 0;
     position: relative;
     grid-row: arr;
     grid-column: conte;
@@ -209,6 +327,7 @@ ul, li {
 
 /*_________________HERO SECTION OVER______________*/
 /*_________________MUSING PAGE STARTS______________*/
+
 .musing {
     grid-row: mus;
     display: grid;
@@ -234,7 +353,7 @@ ul, li {
     text-align: left;
     height: inherit;
     width: inherit;
-    font-size: 2.5vh;
+    font-size: 3vh;
     font-family: khand;
     color: lightskyblue;
 }
@@ -257,17 +376,12 @@ ul, li {
     text-align: left;
     height: inherit;
     width: inherit;
-    font-size: 2.5vh;
+    font-size: 3vh;
     font-family: khand;
     color: lightskyblue;
 }
 
 /*_________________MUSING SECTION OVER______________*/
-/*_________________POEM SECTION STARTS______________*/
-.container {
-    width: 90vw;
-    max-width: 90%;
-}
 
 .head {
     margin-top: 5vh;
@@ -284,4 +398,248 @@ ul, li {
     clear: both;
 }
 
-/*_________________POEM SECTION OVER______________*/
+/*_________________RHYM SECTION STARTS______________*/
+
+.rhymes {
+    grid-row: poem;
+    display: grid;
+    grid-template-rows: 75vh 75vh;
+}
+
+.rhymes1 {
+    margin-bottom: 5vh;
+    margin-right: 8vh;
+    grid-row: 1;
+    background-color: white;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.rh-title {
+    font-size: 4vh;
+    color: #6679cc;
+}
+
+.rh1 {
+    font-family: khand;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    height: 100%;
+    width: 100%;
+    background-color: #202746;
+    color: lightskyblue;
+    font-size: 2.5vh;
+}
+
+.rhymes2 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 8vh;
+    grid-row: 2;
+    background-color: white;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.rh2 {
+    font-family: khand;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    height: 100%;
+    width: 100%;
+    background-color: #202746;
+    color: lightskyblue;
+    font-size: 2.5vh;
+}
+
+/*_________________RHYM SECTION OVER________________________*/
+/*_________________COMPOSITIONS SECTION STARTS______________*/
+.compositions {
+    grid-row: comp;
+    display: grid;
+    grid-template-rows: 175vh;
+}
+
+.compositions1 {
+    background-color: white;
+    margin: 5vh;
+    padding: 2vh;
+}
+
+.comp {
+    font-family: khand;
+    font-size: 3vh;
+    background-color: #202746;
+    color: lightskyblue;
+    text-align: center;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10vh 140vh 10vh;
+}
+
+.comp-title {
+    grid-row: 1;
+    font-size: 5vh;
+    color: #6679cc;
+}
+
+.comp-content {
+    grid-row: 2;
+}
+
+.comp-more {
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    padding-top: 4vh;
+    background-color: rgba(32, 39, 70, 0.9);
+}
+
+/*_________________COMPOSITIONS SECTION OVER________________*/
+/*_________________ABOUT SECTION STARTS_____________________*/
+.about {
+    grid-row: about;
+    margin: 0;
+    overflow: hidden;
+}
+
+.about-data {
+    display: grid;
+    background-color: #0E0F34;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: [abro] 18vh [abcnt] 70vh [bookmk] 10vh;
+    grid-template-columns: 5vw repeat(9, 10vw) 5vw;
+}
+
+.abhe {
+    grid-row: abro;
+    grid-column: 3 / 10;
+}
+
+.ab-frame {
+    grid-row: abcnt;
+    grid-column: 3 / all;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 40vw 36vw;
+    grid-template-rows: 20vh 60vh;
+    padding-bottom: 4vh;
+    overflow: hidden;
+    border-left: #d26f05 8vw solid;
+    background: #202746;
+
+}
+
+.img-wrap {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    padding-top: 4vh;
+    padding-left: 6vh;
+    grid-template-columns: 20vw 60vw 20vw;
+    z-index: 1;
+}
+
+.about-img {
+    border: 1vh solid #90a2e4;
+    width: 40vw;
+    grid-column: 2;
+}
+
+.abcont-wrap {
+    grid-row: 2;
+    grid-column: 1;
+    height: 50vh;
+    background: #90a2e4;
+    padding-top: 10vh;
+    padding-right: 1.5vw;
+    z-index: 2;
+}
+
+.abcont-1 {
+    color: rebeccapurple;
+    font-size: 7vw;
+    text-align: right;
+    font-family: Antro-B;
+    z-index: 2;
+}
+
+.abcont-2 {
+    grid-row: 2;
+    padding-top: 9vh;
+    grid-column: 2;
+    color: lightskyblue;
+    font-size: 9vw;
+    text-align: center;
+    font-family: khand;
+    z-index: 2;
+}
+
+.abcont-3 {
+    grid-row: 2;
+    padding-top: 20vh;
+    grid-column: 2;
+    height: fit-content;
+    color: deepskyblue;
+    font-size: 5vw;
+    text-align: center;
+    font-family: khand;
+    z-index: 2;
+    border-bottom: 8px solid #90a2e4;
+    border-right: 8px solid #90a2e4;
+
+}
+
+.abcont-4 {
+    grid-row: 2;
+    padding-top: 27vh;
+    grid-column: 2;
+    color: rebeccapurple;
+    font-size: 9vw;
+    text-align: center;
+    font-family: Antro-B;
+    z-index: 2;
+}
+
+.abcont-5 {
+    grid-row: 2;
+    padding-top: 42vh;
+    grid-column: 2;
+    color: lightskyblue;
+    font-size: 10vw;
+    text-align: center;
+    font-family: khand;
+    z-index: 2;
+}
+
+.bookmark {
+    margin-top: 0;
+    padding-top: 10%;
+    margin-left: 5vw;
+    grid-row: 3;
+    grid-column: 3/5;
+    background-color: #A80906;
+    height: 8vh;
+    width: 10vw;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, 49% 53%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bookmark-cover {
+    height: 100%;
+    width: 100%;
+}
+
+.bookmrk-img {
+    height: 5vw;
+}
+
+/*_________________ABOUT SECTION OVER________________*/
