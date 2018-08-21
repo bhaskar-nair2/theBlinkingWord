@@ -1,19 +1,21 @@
 from flask import Flask, render_template, request, jsonify
-from flask_pymongo import PyMongo
-from datetime import datetime
+import json
 
 app = Flask(__name__)
 
-##### MONGO DB FUNCTIONS START ########
-app.config['MONGO_URI'] = "mongodb://localhost:27017/tbw"
-mongo = PyMongo(app)
+
+##### SQL DB FUNCTIONS START ########
+
+def getPosts():
+    with open('static/data/data.json', 'r') as dataFile:
+        return json.load(dataFile)
 
 
-##### MONGO DB FUNCTIONS START ########
+##### SQL DB FUNCTIONS START ########
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', data=getPosts())
 
 
 @app.route('/mng')
@@ -22,4 +24,4 @@ def manage():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)

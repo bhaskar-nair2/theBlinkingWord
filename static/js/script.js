@@ -1,42 +1,5 @@
-function appPLay() {
-    var app = document.getElementById('app');
-
-    var typewriter = new Typewriter(app, {
-        blinkSpeed: 35,
-        loop: false
-    });
-
-    typewriter
-        .typeString('The')
-        .typeString(' B')
-        // .pauseFor(200)
-        // .typeString('lasted')
-        // .pauseFor(600)
-        // .deleteChars(6)
-        // .typeString('elittling')
-        // .pauseFor(600)
-        // .deleteChars(9)
-        // .typeString('rute')
-        // .pauseFor(600)
-        // .deleteChars(4)
-        // .typeString('linking')
-        // .pauseFor(1500)
-        // .typeString(' World')
-        // .pauseFor(800)
-        // .deleteChars(2)
-        // .pauseFor(1500)
-        // .deleteChars(2)
-        // .pauseFor(1500)
-        // .deleteChars(9)
-        // .pauseFor(1500)
-        .typeString('linking Word')
-        .pauseFor(700)
-        .typeString('.')
-        .start();
-}
-
-
 $(document).ready(function () {
+
     $('#hero').css({
         'height': '100%',
         'width': '100%',
@@ -48,67 +11,88 @@ $(document).ready(function () {
     $('#link-holder').css({
         'margin-top': 13 + 'vh'
     });
-    // $('.link').css({
-    //     'opacity': 0
-    // });
+    $('.link').css({
+        'opacity': 0,
+    });
     // $('#scr-ani').css({
     //     'opacity': 0
     // });
-    // $('#jst-scr').css({
-    //     'opacity': 0
-    // });
-    // $('#chev').css({
-    //     'opacity': 0
-    // });
-    $('.preloader').css({
-        'display': 'None'
+    $('#jst-scr').css({
+        'opacity': 0
     });
-    appPLay()
+    $('#chev').css({
+        'opacity': 0
+    });
+    $('.preloader').css({
+        'display': 'None',
+        'transition': 'all 1s ease-in-out'
+    });
+    StartCtrl()
 });
+
+
+async function StartCtrl() {
+    appPLay();
+    setTimeout(function () {
+        $('.link').css({
+            'opacity': 1,
+            'transition': 'all 1s ease-in-out'
+        });
+    }, (3000));
+    setTimeout(function () {
+        $('#jst-scr').css({
+            'opacity': 1,
+            'transition': 'all 1s ease-in-out'
+        });
+    }, (4000));
+    setTimeout(function () {
+        $('#chev').css({
+            'opacity': 1,
+            'transition': 'all 1s ease-in-out'
+        });
+    }, (5000));
+}
+
+function appPLay() {
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        blinkSpeed: 20,
+        loop: false
+    });
+
+    typewriter
+        .typeString('The')
+        .typeString(' B')
+        .typeString('linking')
+        .typeString(' Word')
+        .pauseFor(700)
+        .typeString('.')
+        .start();
+}
 
 $(document).on("scroll", function () {
 
     var dh = $(document).height();
     var wh = $(window).height();
     var scrollTop = $(document).scrollTop() / (dh - wh) * 10000;
-    // $('.link').css({
-    //         'opacity': 1
-    //     });
-    // if (scrollTop > 650) {
-    //     $('#scr-ani').css({
-    //         'opacity': 0
-    //     });
-    //     $('#jst-scr').css({
-    //         'opacity': 0
-    //     });
-    //     $('#chev').css({
-    //         'opacity': 0
-    //     });
-    // }
-    // else if (scrollTop >= 0 && scrollTop < 650) {
-    //     opacity = 1 - (scrollTop / 650);
-    //     $('#scr-ani').css({
-    //         'opacity': opacity
-    //     });
-    //     $('#jst-scr').css({
-    //         'opacity': opacity
-    //     });
-    //     $('#chev').css({
-    //         'opacity': opacity
-    //     });
-    //
-    // }
-    // else {
-    //     $('#scr-ani').css({
-    //         'opacity': 1
-    //     });
-    //     $('#jst-scr').css({
-    //         'opacity': 1
-    //     });
-    //     $('#chev').css({
-    //         'opacity': 1
-    //     })
-    // }
+
+    //FROM 0
+
+
+    if (scrollTop <= 1) {
+        opacityScroll = 1;
+    }
+    else if (scrollTop > 400) {
+        opacityScroll = 0;
+    }
+
+    else {
+        opacityScroll = 1 - (scrollTop / 399);
+    }
+    $('#scr-ani').css({
+        'opacity': opacityScroll,
+    });
 
 
     {
@@ -163,8 +147,6 @@ $(document).on("scroll", function () {
     {
         if (scrollTop < 3000) {
             linkopacity = 1;
-            link = 10;
-            dwn = 5;
         }
         else if (scrollTop > 3300) {
             linkopacity = 0;
@@ -195,11 +177,12 @@ $(document).on("scroll", function () {
         }
         else {
             Height = 32 - ((scrollTop - 6200) / 300 * 20);
-            // fontsize = 18 - ((scrollTop - 6200) / 300 * 9);
             marginTop = 7 - ((scrollTop - 6200) / 300 * 4);
 
             if (scrollTop > 6200 && scrollTop < 6300) {
-                titleOP = 1 - ((scrollTop - 6200) / 300);
+                fontsize = 18;
+                wordSpace = 80;
+                titleOP = 1 - ((scrollTop - 6200) / 100);
             }
             else if (scrollTop >= 6300 && scrollTop < 6350) {
                 titleOP = 0;
@@ -217,11 +200,11 @@ $(document).on("scroll", function () {
         if (scrollTop < 9700) {
             heroop = 1;
         }
-        else if (scrollTop > 10000) {
+        else if (scrollTop > 9800) {
             heroop = 0;
         }
         else {
-            heroop = 1 - ((scrollTop - 9700) / 300);
+            heroop = 1 - ((scrollTop - 9700) / 100);
         }
 
     }
@@ -246,24 +229,4 @@ $(document).on("scroll", function () {
         "opacity": linkopacity,
         'margin-top': linkMargin + 'vh',
     });
-
-
-    // if ($(document).scrollTop() > 100) {
-    //
-    //     $('#link-holder').addClass('link-holder-shrink');
-    //     $('#scr-ani').addClass('scr-ani-shrink');
-    //     $('#jst-scr').addClass('jst-scr-shrink');
-    //     $('#chev').addClass('chevron-shrink')
-    // }
-    // if ($(document).scrollTop() > 150) {
-    //     $('#app').addClass('app-shrink');
-    // }
-    // else if ($(document).scrollTop() < 80) {
-    //     $("#hero").removeClass("under").removeClass("hero-shrink");
-    //     $('#app').removeClass('app-shrink');
-    //     $('#link-holder').removeClass('link-holder-shrink');
-    //     $('#scr-ani').removeClass('scr-ani-shrink');
-    //     $('#jst-scr').removeClass('jst-scr-shrink');
-    //     $('#chev').removeClass('chevron-shrink')
-    // }
 });
