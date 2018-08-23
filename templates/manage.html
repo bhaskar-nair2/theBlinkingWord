@@ -1,11 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <meta charset="UTF-8">
     <title>The Blinking World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap4/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/Logo_main.png') }}">
 </head>
-<body>
+<body class="mn-grid">
+{#_____________LOGIN_____________#}
+<div class="blocker" role="dialog">
+    <form class="login_form">
+        <div class="input-group input-group-lg logname">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="user">Username</span>
+            </div>
+            <div>
+                <input id="login-name" type="text" aria-label="Username"
+                       aria-describedby="user" value="adisha"
+                       required="required" name="login-name" autocomplete="username">
+            </div>
+        </div>
+        <div class="input-group input-group-lg logpass">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="pass">Password</span>
+            </div>
+            <div>
+                <input id="login-pass" type="password" aria-label="Password"
+                       aria-describedby="pass" autocomplete="current-password"
+                       required="required" name="login-pass" placeholder="Password">
+            </div>
+        </div>
+        <button id="logbutton" class="btn btn-primary" type="button">Login</button>
+    </form>
+</div>
+
+{#_____________HEAD______________#}
+<section id="mntop" class="mntop">
+    <h1 style="font-size: 5vh">
+        Manage your Site!
+    </h1>
+    <p style="font-size: 1.5vh">Yeah, this page is kinda bland, but it's just for your eyes so
+        <or>IT OK</or>
+    </p>
+    <p style="text-align: left;padding-left: 2vw;margin: 0">
+        Here are the formatting options you have, read all before you proceed.
+    </p>
+    <ul style="text-align: left">
+        <li>
+        </li>
+        <li>
+            Text can be colourised by surrounding it with &lt; or &gt; text &lt; /or &gt; for orange and &lt; drk &gt;
+            text &lt; /drk &gt; for dark blue, heading are by default dark blue, but you can change it by placing tags.
+            Please do pay attention to the '/' symbol in the close tag
+        </li>
+        <li>
+            Ignore the &lt; br &gt; tags, for a new line just press enter or go to the new line as usual
+        </li>
+        <li>
+            The heights of elements in the main page aren't dynamic(CAuse that was becomig too hard to do xD) so try to
+            fit things using the font size and all.
+        </li>
+        <li>
+            You find an error/need a change in design/new colors anything, YOU TELL ME.
+        </li>
+        <li>
+            I couldn't understand how to mark the
+        </li>
+        <li>
+            This is
+            <or>NOT</or>
+            the ideal place to write, it's better to copy paste here
+        </li>
+        <li>
+            <or>DO NOT FORGET TO CLICK ON SAVE WHENEVER YOU MAKE CHANGES</or>
+            I would have automated it, but that would have led to a lot of issues..
+        </li>
+    </ul>
+</section>
+{#_________MUSING-1______________#}
+<section id="m1" class="medit1">
+    <div class="forms formm1">
+        <h2 class="desc">Muse-1</h2>
+        <input type="number" class="form-control heading" name="align" placeholder="Heading" disabled>
+
+        <input type="number" class="form-control font_size" required="required"
+               name="align" value="{{ data['c']['font-size'].split(' ')[1].split('v')[0] }}" placeholder="Font-Size">
+
+        <input type="text" class="form-control date" required="required"
+               name="align" value="{{ data['m1']['date'] }}" placeholder="Date">
+
+        <input type="color" class="form-control color" required="required"
+               name="align" value="{{ data['m1']['color'].split(' ')[1] }}" placeholder="Color">
+
+        <textarea class="form-control"> {{ data['m1']['content'] }} </textarea>
+
+        <input type="text" class="form-control align" required="required"
+               name="align" value="{{ data['m1']['align'].split(' ')[1] }}" placeholder="Color">
+
+        <button id="1" class="btn btn-danger clk" type="submit">Save</button>
+    </div>
+</section>
+{#_________MUSING-2______________#}
+<section id="m2" class="medit2">
+    <div class="forms formm2">
+        <h2 class="desc">Muse-2</h2>
+        <input type="number" class="form-control heading" name="align" placeholder="Heading" disabled>
+
+        <input type="number" class="form-control font_size" required="required"
+               name="align" value="{{ data['c']['font-size'].split(' ')[1].split('v')[0] }}" placeholder="Font-Size">
+
+        <input type="text" class="form-control date" required="required"
+               name="align" value="{{ data['m2']['date'] }}" placeholder="Date">
+
+        <input type="color" class="form-control color" required="required"
+               name="align" value="{{ data['m2']['color'].split(' ')[1] }}" placeholder="Color">
+
+        <textarea class="form-control"> {{ data['m2']['content'] }} </textarea>
+
+        <input type="text" class="form-control align" required="required"
+               name="align" value="{{ data['m2']['align'].split(' ')[1] }}" placeholder="Color">
+
+        <button id="2" class="btn btn-danger clk" type="submit">Save</button>
+    </div>
+</section>
+{#_________POEM-1________________#}
+<section id="p1" class="poem1">
+    <div class="forms formm3">
+        <h2 class="desc">Poem-1</h2>
+        <input type="text" class="form-control heading" required="required"
+               name="align" value="{{ data['p1']['title'] }}" placeholder="Heading">
+
+        <input type="number" class="form-control font_size" required="required"
+               name="align" value="{{ data['c']['font-size'].split(' ')[1].split('v')[0] }}" placeholder="Font-Size">
+
+        <input type="text" class="form-control date" required="required"
+               name="align" value="{{ data['p1']['date'] }}" placeholder="Date">
+
+        <input type="color" class="form-control color" required="required"
+               name="align" value="{{ data['p1']['color'].split(' ')[1] }}" placeholder="Color">
+
+        <textarea class="form-control"> {{ data['p1']['content'] }} </textarea>
+
+        <input type="text" class="form-control align" required="required"
+               name="align" value="{{ data['p1']['align'].split(' ')[1] }}" placeholder="Color">
+
+        <button id="3" class="btn btn-danger clk" type="submit">Save</button>
+    </div>
+</section>
+{#_________POEM-2________________#}
+<section id="p2" class="poem2">
+    <div class="forms formm4">
+        <h2 class="desc">Poem-2</h2>
+        <input type="text" class="form-control heading" required="required"
+               name="align" value="{{ data['p2']['title'] }}" placeholder="Heading">
+
+        <input type="number" class="form-control font_size" required="required"
+               name="align" value="{{ data['c']['font-size'].split(' ')[1].split('v')[0] }}" placeholder="Font-Size">
+
+        <input type="text" class="form-control date" required="required"
+               name="align" value="{{ data['p2']['date'] }}" placeholder="Date">
+
+        <input type="color" class="form-control color" required="required"
+               name="align" value="{{ data['p2']['color'].split(' ')[1] }}" placeholder="Color">
+
+        <textarea class="form-control"> {{ data['p2']['content'] }} </textarea>
+
+        <input type="text" class="form-control align" required="required"
+               name="align" value="{{ data['p2']['align'].split(' ')[1] }}" placeholder="Color">
+
+        <button id="4" class="btn btn-danger clk" type="submit">Save</button>
+    </div>
+</section>
+{#_____________COMPOSITION______________#}
+<section id="c" class="comps">
+    <div class="forms formm3">
+        <h2 class="desc">Composition</h2>
+
+        <input type="text" class="form-control heading" required="required"
+               name="align" value="{{ data['c']['title'] }}" placeholder="Heading">
+
+        <input type="number" class="form-control font_size" required="required"
+               name="align" value="{{ data['c']['font-size'].split(' ')[1].split('v')[0] }}" placeholder="Font-Size">
+
+        <input type="text" class="form-control date" required="required"
+               name="align" value="{{ data['c']['date'] }}" placeholder="Date">
+
+        <input type="color" class="form-control color" required="required"
+               name="align" value="{{ data['c']['color'].split(' ')[1] }}" placeholder="Color">
+
+        <textarea class="form-control"> {{ data['c']['content'] }} </textarea>
+
+        <input type="text" class="form-control align" required="required"
+               name="align" value="{{ data['c']['align'].split(' ')[1] }}" placeholder="Color">
+
+        <button id="5" class="btn btn-danger clk" type="submit">Save</button>
+    </div>
+</section>
+
+<div class="toasty alert alert-danger" role="alert">
+    SAVED!!
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='bootstrap4/js/bootstrap.bundle.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/socket-1.slim.min.js') }}"></script>
+<script type="text/javascript" charset="UTF-8">
+    let socket = io.connect();
+    socket.on('connect', function () {
+        socket.emit('init', {data: 'I\'m Connected to Manage!!'});
+    });
+    jQuery('.clk').click(function (e) {
+        e.preventDefault();
+        let ele = {
+            "font-size": "font-size: " + $("div.formm" + e.target.id + "> input.font_size").val() + "vh",
+            "date": $("div.formm" + e.target.id + "> input.date").val(),
+            "align": "text-align: " + $("div.formm" + e.target.id + "> input.align").val(),
+            "color": "color: " + $("div.formm" + e.target.id + "> input.color").val(),
+            "more-url": "",
+            "title": $("div.formm" + e.target.id + "> input.heading").val(),
+            "content": $("div.formm" + e.target.id + "> textarea").val().replace(/\n/g, '<br>')
+        };
+        socket.emit('saved', [$(e.target).parent().parent().attr('id'), ele]);
+        toast()
+    });
+    $('#logbutton').click(function (evt) {
+        data = [$("#login-name").val(), $('#login-pass').val()]
+        socket.emit('login', data);
+        socket.on('reply', function (msg) {
+            if (msg == 1) {
+                console.log('Authorized')
+                $('div.blocker').css({
+                    display: 'None'
+                })
+            }
+            else {
+                console.log('Sorry, not the correct words')
+            }
+        })
+    });
+
+    function toast() {
+        let opa = 1;
+
+        function op() {
+            $('.toasty').css({
+                opacity: opa
+            });
+            if (opa > 0) {
+                opa -= 0.01;
+                setTimeout(op, 50);
+            }
+        }
+
+        op();
+    }
+</script>
 
 </body>
 </html>

@@ -30,7 +30,6 @@ $(document).ready(function () {
     StartCtrl()
 });
 
-
 async function StartCtrl() {
     appPLay();
     setTimeout(function () {

@@ -37,7 +37,7 @@
 <section class="musing" id="musing">
     <div class="ms1-br">
         <div class="musing1">
-            <p class="ms1" style="{{ data['m1']['align'] }};{{ data['m1']['color'] }}">
+            <p class="ms1" style="{{ data['m1']['font-size'] }};{{ data['m1']['align'] }};{{ data['m1']['color'] }}">
                 <drk>{{ data['m1']['date'] }}</drk>
                 <br>
                 {{ data['m1']['content'] | safe }}
@@ -47,7 +47,7 @@
     <div class="ms2-br">
         <span class="hr"></span>
         <div class="musing2">
-            <p class="ms2" style="{{ data['m2']['align'] }};{{ data['m2']['color'] }}">
+            <p class="ms2" style="{{ data['m2']['font-size'] }};{{ data['m2']['align'] }};{{ data['m2']['color'] }}">
                 <drk>{{ data['m2']['date'] }}</drk>
                 <br>
                 {{ data['m2']['content'] | safe }}
@@ -63,7 +63,7 @@
 </div>
 <section class="rhymes" id="rhymes">
     <div class="rhymes1">
-        <p class="rh1" style="{{ data['p1']['align'] }};{{ data['p1']['color'] }}">
+        <p class="rh1" style="{{ data['p1']['font-size'] }};{{ data['p1']['align'] }};{{ data['p1']['color'] }}">
             <span class="rh-title">{{ data['p1']['title'] | safe }}</span><br>
             <drk>{{ data['p1']['date'] }}</drk>
             <br>
@@ -71,7 +71,7 @@
         </p>
     </div>
     <div class="rhymes2">
-        <p class="rh2" style="{{ data['p2']['align'] }};{{ data['p2']['color'] }}">
+        <p class="rh2" style="{{ data['p2']['font-size'] }};{{ data['p2']['align'] }};{{ data['p2']['color'] }}">
             <span class="rh-title">{{ data['p2']['title'] | safe }}</span><br>
             <drk>{{ data['p2']['date'] }}</drk>
             <br>
@@ -88,15 +88,16 @@
 
 <section class="compositions" id="compositions">
     <div class="compositions1">
-        <div class="comp" style="{{ data['c']['align'] }};{{ data['c']['color'] }}">
+        <div class="comp" style="{{ data['c']['font-size'] }};{{ data['c']['align'] }};{{ data['c']['color'] }}">
         <span class="comp-title">
         {{ data['c']['title'] | safe }}
         </span><br>
-            <drk>{{ data['c']['date'] }}</drk><br>
+            <drk>{{ data['c']['date'] }}</drk>
+            <br>
             <p class="comp-content">
                 {{ data['c']['content'] | safe }}
             </p>
-            <a class="comp-more" style="color: darkorange" href="{{ data['c']['more-url']  }}">More...</a>
+            <a class="comp-more" style="color: darkorange" href="{{ data['c']['more-url'] }}">More...</a>
 
         </div>
     </div>
@@ -122,6 +123,7 @@
 </section>
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='bootstrap4/js/bootstrap.bundle.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/socket-1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/typewriter.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>

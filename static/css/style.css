@@ -122,15 +122,17 @@ body {
         transform: rotate(360deg);
     }
 }
+
 /*_________________CUSTOM MADE ELEMENTS START______________*/
 or {
     color: darkorange;
 }
 
-drk{
+drk {
     color: #6679cc;
-    font-size:  2vh;
+    font-size: 2vh;
 }
+
 /*_________________BACKGROUNDS SECTION STARTS______________*/
 .backgrounds {
     width: 100%;
@@ -184,7 +186,7 @@ drk{
     font-family: Antro-B;
     word-spacing: 80vw;
     font-size: 18vw;
-    color: #ffffff;
+    color: #f5f0f0;
     /*transition: all 0.3s ease-in-out;*/
 }
 
@@ -217,20 +219,20 @@ ul, li {
 
 .link {
     font-family: Antro;
-    color: #ffffff;
+    color: #f5f0f0;
     font-size: 5vw;
-    text-shadow: 2px 2px 8px #ffffff;
+    text-shadow: 2px 2px 8px #f5f0f0;
     text-align: center;
 }
 
 .link:hover {
-    color: #ffffff;
+    color: #f5f0f0;
     text-decoration: none;
     text-shadow: 2px 2px 2px #E5D4B7;
 }
 
 .link:active {
-    border-bottom: white 2px solid;
+    border-bottom: #f5f0f0 2px solid;
 }
 
 .scr-ani {
@@ -342,7 +344,7 @@ ul, li {
 .ms1-br {
     grid-row: mus_1;
     margin: 5vh;
-    background-color: white;
+    background-color: #f5f0f0;
     padding: 1.5vh;
     overflow: hidden;
 }
@@ -365,7 +367,7 @@ ul, li {
 .ms2-br {
     grid-row: mus_2;
     margin: 5vh;
-    background-color: white;
+    background-color: #f5f0f0;
     padding: 1.5vh;
     overflow: hidden;
 }
@@ -392,7 +394,7 @@ ul, li {
     margin-top: 5vh;
     margin-bottom: 5vh;
     text-align: center;
-    color: #FFF;
+    color: #f5f0f0;
     font-size: 4vh;
     font-weight: normal;
     padding: 20px 0 40px 0;
@@ -412,9 +414,9 @@ ul, li {
 
 .rhymes1 {
     margin-bottom: 5vh;
-    margin-right: 8vh;
+    margin-right: 12vh;
     grid-row: 1;
-    background-color: white;
+    background-color: #f5f0f0;
     padding-right: 2vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -443,7 +445,7 @@ ul, li {
     margin-bottom: 5vh;
     margin-left: 8vh;
     grid-row: 2;
-    background-color: white;
+    background-color: #f5f0f0;
     padding-left: 2vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -471,7 +473,7 @@ ul, li {
 }
 
 .compositions1 {
-    background-color: white;
+    background-color: #f5f0f0;
     margin: 5vh;
     padding: 2vh;
 }
@@ -480,7 +482,7 @@ ul, li {
     font-family: khand;
     font-size: 3vh;
     background-color: #202746;
-    color: lightskyblue;
+    color: #87cefa;
     text-align: center;
     padding-right: 1vh;
     padding-left: 1vh;
@@ -520,10 +522,10 @@ ul, li {
 
 .about-data {
     display: grid;
-    background-color: #0E0F34;
+    background-color: #202746;
     height: 100vh;
     width: 100vw;
-    grid-template-rows: [abro] 18vh [abcnt] 70vh [bookmk] 10vh;
+    grid-template-rows: [abro] 20vh [abcnt] 70vh [bookmk] 10vh;
     grid-template-columns: 5vw repeat(9, 10vw) 5vw;
 }
 
@@ -534,15 +536,16 @@ ul, li {
 
 .ab-frame {
     grid-row: abcnt;
-    grid-column: 3 / all;
+    grid-column: 3 / 11;
     height: 70vh;
     display: grid;
     grid-template-columns: 40vw 36vw;
     grid-template-rows: 20vh 60vh;
     padding-bottom: 4vh;
     overflow: hidden;
-    border-left: #d26f05 8vw solid;
-    background: #202746;
+    border-left: #ff8310 8vw solid;
+    background: #f5f0f0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .bookmark {
@@ -551,7 +554,7 @@ ul, li {
     margin-left: 5vw;
     grid-row: 3;
     grid-column: 3/5;
-    background-color: #A80906;
+    background-color: #bf1805;
     height: 8vh;
     width: 10vw;
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, 49% 53%);
@@ -570,3 +573,150 @@ ul, li {
 }
 
 /*_________________ABOUT SECTION OVER________________*/
+
+/*_________________MANAGE PAGE STARTS________________*/
+.mn-grid {
+    display: grid;
+    max-width: 100%;
+    background-color: #f0f5f5;
+    grid-template-areas: "header header" "muse1 muse1" "muse2 muse2 " "poem1 poem1 " "poem2 poem2 " "conte conte ";
+    grid-template-rows: auto repeat(5, auto);
+}
+
+.blocker {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.login_form {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+.logname {
+    margin-left: 20vw;
+    margin-bottom: 3vw;
+}
+
+.logpass {
+    margin-left: 20vw;
+    margin-bottom: 3vw;
+}
+
+
+#mntop {
+    grid-area: header;
+    text-align: center;
+    display: block;
+    height: fit-content;
+
+}
+
+#m1 {
+    grid-area: muse1;
+    text-align: center;
+    display: block;
+    height: 60vh
+
+}
+
+#m2 {
+    grid-area: muse2;
+    text-align: center;
+    display: block;
+    height: 60vh;
+
+}
+
+#p1 {
+    grid-area: poem1;
+    text-align: center;
+    display: block;
+    height: 100vh;
+
+}
+
+#p2 {
+    grid-area: poem2;
+    text-align: center;
+    display: block;
+    height: 100vh;
+
+}
+
+#c {
+    grid-area: conte;
+    text-align: center;
+    display: block;
+    height: 150vh;
+
+}
+
+.forms {
+    display: grid;
+    height: inherit;
+    grid-template-areas: "desc desc desc . ." "title title title . ." " date date font font color " "txt txt txt txt txt" "align align but . .";
+    grid-template-rows: 5vh 3vh 3vh auto 5vh;
+    grid-template-columns: repeat(5, 17vw);
+    grid-gap: 1vh;
+    margin: 5vw;
+}
+
+.desc {
+    text-align: left;
+    grid-area: desc;
+}
+
+.heading {
+    grid-area: title;
+}
+
+.font_size {
+    width: 100%;
+    grid-area: font;
+}
+
+.date {
+    width: 100%;
+    grid-area: date;
+}
+
+.color {
+    width: 100%;
+    height: 100%;
+    grid-area: color;
+}
+
+.form-control {
+    font-size: 1.5rem;
+}
+
+textarea {
+    grid-area: txt;
+}
+
+.clk {
+    height: 5vh;
+    grid-area: but;
+}
+
+.align {
+    grid-area: align;
+    text-align: left;
+    padding: 0;
+}
+
+.toasty {
+    position: fixed;
+    width: 15vw;
+    left: 42.5vw;
+    top: 50vh;
+    opacity: 0;
+}
+
+/*_________________MANAGE PAGE OVER________________*/
