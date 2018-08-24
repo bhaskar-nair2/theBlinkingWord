@@ -1,1 +1,46 @@
-{"m1": {"font-size": "font-size: 2.5vh", "date": "Sep 01, 2018", "align": "text-align: center", "color": "color: #87cefa", "more-url": "", "title": "", "content": "                         <or>Adiitttiiiii</or><br>HAppyy happy happy Birthday!!!<br>Yeah, I know you are like <or>WTF</or> is this a cringe card like the ones exces send?!<br>Well, this isn't. I call it a sticker book.<br>And just like a sticker book, it has markings and spaces for what goes where!<br>OK! let's start! Here comes..<br><or>#1:</or> Your favourite muse<br>                         "}, "m2": {"font-size": "font-size: 2.5vh", "date": "Sep 01, 2018", "align": "text-align: center", "color": "color: #87cefa", "more-url": "", "title": "", "content": "    Followed By..<br><or>#2:</or> Your 2nd favourite muse<or> :P</or><br><br>Also, this is my <or>first</or> mobile site, cause you don't have a laptop there, yes, that's why I was <or>just asking. </or>So when I say I need feedback.<or> I AM SeRIouS </or><br><br>The background is <or>Crazzy</or> right?    "}, "p1": {"font-size": "font-size: 2.5vh", "date": "Sep 01, 2018", "align": "text-align: left", "color": "color: #87CEFA", "title": "What is even a Poem, without a Title", "content": "So I guess you know that this one is for<br><br><or>#3:</or>Your favourite poem!!<br><br><br>BTW, did I tell you that you look beautiful? <br>No.?<br><br>Well, you really do!"}, "p2": {"font-size": "font-size: 2.5vh", "date": "Sep 01, 2018", "align": "text-align: centre", "color": "color: #87cefa", "more-url": "", "title": "Look, I know it's a lot of Work", "content": "  And you are a hardworking, really busy chick<br><br>But do this one for <or>B-fren</or><br><br>You know what, you can write about me too,<br>It does and will<or>always</or>makes me happy :P<br>So we need here..<br><or>#4:</or>Your 2nd favourite Poem!  "}, "c": {"font-size": "font-size: 2.5vh", "date": "Sep 01, 2018", "align": "text-align: centre", "color": "color: #87CEFA", "more-url": "", "title": "And, before I forget..", "content": "Most of the things are customizable<br>Which means, you don't need to take out time from your<or>Busy Schedule</or>and<or>call me</or>to change asingle spelling.<or>:P</or><br><br>But don't hesitate to call for any non-customizable elements, including animations and designs. Fellfree to send you own designs too,honestly just takes me a second to change most of it.<br><br>Also, musings and poems are generally small, so we can manage to fit them, but compositions are HUGE!But don't worry, I added a MORE button at the end to link to anypage/website/blog you want.<br>To edit these, just add '/manage', without quotes, to the url in the address bar.<br>If that was too much English for you to understand, just go to<or>ADD-WEBSITE-NAME-HERE.EXTENTION/manage</or>{#            TODO: ADD WEBSITE LINK AND ADD PASSWORD FOR ACCESS#}or, just click on more for now<br>And obviously, you'll need a password. it's a hard-coded one (non-customizable), so don't forgetit!!<br>Password:{#            TODO: ADD PASSWORD HERE!!#}<br><br>And, finally we have at<br><or>#5:</or>Your favourite Composition!<br><br><or>Exactly 5, so that you don't forget the date again...</or>"}}
+{
+  "m1": {
+    "font-size": "font-size: 2.5vh",
+    "date": "Sep 01, 2018",
+    "align": "text-align: center",
+    "color": "color: #87cefa",
+    "more-url": "",
+    "title": "",
+    "content": "                         <or>Adiitttiiiii</or><br>HAppyy happy happy Birthday!!!<br>Yeah, I know you are like <or>WTF</or> is this a cringe card like the ones exces send?!<br>Well, this isn't. I call it a sticker book.<br>And just like a sticker book, it has markings and spaces for what goes where!<br>OK! let's start! Here comes..<br><or>#1:</or> Your favourite muse<br>                         "
+  },
+  "m2": {
+    "font-size": "font-size: 2.5vh",
+    "date": "Sep 01, 2018",
+    "align": "text-align: center",
+    "color": "color: #87cefa",
+    "more-url": "",
+    "title": "",
+    "content": "    Followed By..<br><or>#2:</or> Your 2nd favourite muse<or> :P</or><br><br>Also, this is my <or>first</or> mobile site, cause you don't have a laptop there, yes, that's why I was <or>just asking. </or>So when I say I need feedback.<or> I AM SeRIouS </or><br><br>The background is <or>Crazzy</or> right?    "
+  },
+  "p1": {
+    "font-size": "font-size: 2.5vh",
+    "date": "Sep 01, 2018",
+    "align": "text-align: left",
+    "color": "color: #87CEFA",
+    "title": "What is even a Poem, without a Title",
+    "content": "So I guess you know that this one is for<br><br><or>#3:</or>Your favourite poem!!<br><br><br>BTW, did I tell you that you look beautiful? <br>No.?<br><br>Well, you really do!"
+  },
+  "p2": {
+    "font-size": "font-size: 2.5vh",
+    "date": "Sep 01, 2018",
+    "align": "text-align: centre",
+    "color": "color: #87cefa",
+    "more-url": "",
+    "title": "Look, I know it's a lot of Work",
+    "content": "   And you are a hardworking, really busy chick<br><br>But do this one for <or>B-fren</or><br><br>You know what, you can write about me too,<br>It does and will<or>always</or>makes me happy :P<br>So we need here..<br><or>#4:</or>Your 2nd favourite Poem!   "
+  },
+  "c": {
+    "font-size": "font-size: 4vh",
+    "date": "Sep 01, 2018",
+    "align": "text-align: centre",
+    "color": "color: #87cefa",
+    "more-url": "",
+    "title": "And, before I forget..",
+    "content": " Most of the things are customizable<br>Which means, you don't need to take out time from your<or>Busy Schedule</or>and<or>call me</or>to change asingle spelling.<or>:P</or><br><br>But don't hesitate to call for any non-customizable elements, including animations and designs. Fellfree to send you own designs too,honestly just takes me a second to change most of it.<br><br>Also, musings and poems are generally small, so we can manage to fit them, but compositions are HUGE!But don't worry, I added a MORE button at the end to link to anypage/website/blog you want.<br>To edit these, just add '/manage', without quotes, to the url in the address bar.<br>If that was too much English for you to understand, just go to<or>ADD-WEBSITE-NAME-HERE.EXTENTION/manage</or>{#            TODO: ADD WEBSITE LINK AND ADD PASSWORD FOR ACCESS#}or, just click on more for now<br>And obviously, you'll need a password. it's a hard-coded one (non-customizable), so don't forgetit!!<br>Password:flatass<br><br>And, finally we have at<br><or>#5:</or>Your favourite Composition!<br><br><or>Exactly 5, so that you don't forget the date again...</or> "
+  }
+}

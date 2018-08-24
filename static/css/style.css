@@ -536,24 +536,60 @@ ul, li {
 
 .ab-frame {
     grid-row: abcnt;
-    grid-column: 3 / 11;
+    grid-column: 2 / 11;
+    margin-left: 7vw;
+    margin-right: 7vw;
     height: 70vh;
     display: grid;
-    grid-template-columns: 40vw 36vw;
-    grid-template-rows: 20vh 60vh;
+    grid-template-areas: "title" "img" "img" "auth";
+    grid-template-rows: 15% 35% 35% 15%;
     padding-bottom: 4vh;
     overflow: hidden;
-    border-left: #ff8310 8vw solid;
-    background: #f5f0f0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    border-left: #e8770d 8vw solid;
+    background: #f6f6f6;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.7), 12px 12px rgba(255, 255, 255, 0.7);
+}
+
+.abimg {
+    grid-area: img;
+    width: 70vw;
+    transform: scale(1.2);
+}
+
+.abTitle {
+    color: #202746;
+    grid-area: title;
+    font-family: Antro-B;
+    font-size: 3.5vh;
+    padding-right: 3vh;
+    padding-top: 2vh;
+    text-align: right;
+    z-index: 3;
+}
+
+.under {
+    font-family: khand;
+    font-size: 2vh;
+    color: #202746;
+}
+
+.abAuth {
+    grid-area: auth;
+    color: #202746;
+    font-family: Antro-B;
+    font-size: 3.5vh;
+    padding-right: 3vh;
+    padding-top: 8vh;
+    text-align: right;
+    z-index: 3;
 }
 
 .bookmark {
     margin-top: 0;
     padding-top: 10%;
-    margin-left: 5vw;
+    margin-left: 8vw;
     grid-row: 3;
-    grid-column: 3/5;
+    grid-column: 2;
     background-color: #bf1805;
     height: 8vh;
     width: 10vw;
@@ -607,7 +643,6 @@ ul, li {
     margin-left: 20vw;
     margin-bottom: 3vw;
 }
-
 
 #mntop {
     grid-area: header;
