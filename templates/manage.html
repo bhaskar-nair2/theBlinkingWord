@@ -10,6 +10,7 @@
 </head>
 <body class="mn-grid">
 {#_____________LOGIN_____________#}
+{% if not session['user'] == 'adisha' %}
 <div class="blocker" role="dialog">
     <form class="login_form">
         <div class="input-group input-group-lg logname">
@@ -35,6 +36,7 @@
         <button id="logbutton" class="btn btn-primary" type="button">Login</button>
     </form>
 </div>
+{% endif %}
 
 {#_____________HEAD______________#}
 <section id="mntop" class="mntop">
@@ -59,14 +61,10 @@
             Ignore the &lt; br &gt; tags, for a new line just press enter or go to the new line as usual
         </li>
         <li>
-            The heights of elements in the main page aren't dynamic(CAuse that was becomig too hard to do xD) so try to
-            fit things using the font size and all.
+            The heights of elements in the main page aren't dynamic as of now.. if there is some content which overflows, justlet me know, it's damn simple to make it scrollable
         </li>
         <li>
             You find an error/need a change in design/new colors anything, YOU TELL ME.
-        </li>
-        <li>
-            I couldn't understand how to mark the
         </li>
         <li>
             This is

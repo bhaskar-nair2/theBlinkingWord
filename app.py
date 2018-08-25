@@ -2,13 +2,14 @@ from flask import Flask, render_template, request, jsonify, session
 from flask_sessions import Session
 from flask_socketio import SocketIO, emit
 import json
+from datetime import timedelta
 
 app = Flask(__name__)
 socket = SocketIO(app)
 sess = Session()
 sess.init_app(app)
-
-app.config['SECRET_KEY'] = 'bkhHUo0*&%vulwdb&bhbI&658xYIbibwLUIbk'
+app.secret_key = 'bkhHUo0*&%vulwdb&bhbI&658xYIbibwLUIbk'
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
 
 
 ##### SQL DB FUNCTIONS START ########
@@ -34,6 +35,7 @@ def index():
 
 @app.route('/manage')
 def manage():
+    session.permanent = True
     return render_template('manage.html', data=getPosts())
 
 
@@ -45,7 +47,7 @@ def handle_my_custom_event(json):
 @socket.on('saved')
 def save_evt(data):
     try:
-        if session['USERNAME'] == 'adisha':
+        if session['user'] == 'adisha':
             editPost(data[0], data[1])
             print('saved')
     except KeyError:
@@ -55,11 +57,11 @@ def save_evt(data):
 @socket.on('login')
 def login(data):
     if data[0] == 'adisha' and data[1] == 'flatass':
-        session['USERNAME'] = 'adisha'
+        session['user'] = 'adisha'
         return emit('reply', 1)
     else:
         return emit('reply', 0)
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')
