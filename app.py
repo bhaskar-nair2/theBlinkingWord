@@ -14,7 +14,11 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
 socket = SocketIO(app, manage_sessions=False)
 Session(app)
 
-
+#
+# WARNING
+# ON GIT PUSH NEW DATA GETS ERASED!! MAKE SURE YOU PULL BEFORE PUSHING OR SOMETHING LIKE THAT!!!
+# Warning
+#
 
 ##### SQL DB FUNCTIONS START ########
 
@@ -56,7 +60,7 @@ def save_evt(data):
     try:
         if session['user'] == 'adisha':
             editPost(data[0], data[1])
-            print('saved')
+            print(data)
     except KeyError:
         print('No User In Session')
 

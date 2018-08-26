@@ -354,6 +354,7 @@ ul, li {
     height: 100%;
     background-color: #202746;
     padding: 2vh;
+    overflow: hidden;
     word-wrap: break-word;
 }
 
@@ -362,6 +363,7 @@ ul, li {
     width: inherit;
     font-size: 3vh;
     font-family: khand;
+    overflow-y: scroll;
 }
 
 .ms2-br {
@@ -377,6 +379,7 @@ ul, li {
     height: 100%;
     background-color: #202746;
     word-wrap: break-word;
+    overflow: hidden;
     padding: 0.5vh;
 }
 
@@ -385,6 +388,7 @@ ul, li {
     width: inherit;
     font-size: 3vh;
     font-family: khand;
+    overflow-y: scroll;
 }
 
 /*_________________MUSING SECTION OVER______________*/
@@ -413,14 +417,12 @@ ul, li {
 }
 
 .rhymes1 {
+    overflow: hidden;
     margin-bottom: 5vh;
     margin-right: 12vh;
     grid-row: 1;
     background-color: #f5f0f0;
-    padding-left: 1vh;
-    padding-right: 2vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding: 2vh 2vh 2vh 1vh;
 }
 
 .rh-title {
@@ -446,11 +448,9 @@ ul, li {
     margin-bottom: 5vh;
     margin-left: 12vh;
     grid-row: 2;
+    overflow: hidden;
     background-color: #f5f0f0;
-    padding-right: 1vh;
-    padding-left: 2vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding: 2vh 1vh 2vh 2vh;
 }
 
 .rh2 {
