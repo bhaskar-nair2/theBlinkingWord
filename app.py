@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify, session
+import flask_login as logins
 from flask_sessions import Session
 from flask_socketio import SocketIO, emit
 import json
@@ -10,6 +11,10 @@ sess = Session()
 sess.init_app(app)
 app.secret_key = 'bkhHUo0*&%vulwdb&bhbI&658xYIbibwLUIbk'
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
+
+socket = SocketIO(app, manage_sessions=False)
+Session(app)
+
 
 
 ##### SQL DB FUNCTIONS START ########
@@ -26,7 +31,8 @@ def editPost(postID, editDict):
         json.dump(data, dataFile)
 
 
-##### SQL DB FUNCTIONS START ########
+##### SQL DB FUNCTIONS END ########
+
 
 @app.route('/')
 def index():
@@ -35,8 +41,10 @@ def index():
 
 @app.route('/manage')
 def manage():
-    session.permanent = True
     return render_template('manage.html', data=getPosts())
+
+
+##### Socket FUNCTIONS START ########
 
 
 @socket.on('init')
@@ -56,12 +64,25 @@ def save_evt(data):
 
 @socket.on('login')
 def login(data):
-    if data[0] == 'adisha' and data[1] == 'flatass':
+    if data[0] == 'adisha' and data[1] == 'niceass':
         session['user'] = 'adisha'
         return emit('reply', 1)
     else:
         return emit('reply', 0)
 
+
+# @socket.on('inSess')
+# def inSession():
+#     try:
+#         if session['user'] == 'adisha':
+#             print('IN session')
+#             return emit('sess', True)
+#     except KeyError:
+#         print('NO session')
+#         emit('sess', False)
+
+
+##### Socket FUNCTIONS END ########
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

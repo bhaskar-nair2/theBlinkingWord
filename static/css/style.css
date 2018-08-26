@@ -417,6 +417,7 @@ ul, li {
     margin-right: 12vh;
     grid-row: 1;
     background-color: #f5f0f0;
+    padding-left: 1vh;
     padding-right: 2vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -446,6 +447,7 @@ ul, li {
     margin-left: 12vh;
     grid-row: 2;
     background-color: #f5f0f0;
+    padding-right: 1vh;
     padding-left: 2vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -489,7 +491,7 @@ ul, li {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 10vh 140vh 10vh;
+    grid-template-rows: 10vh 4vh 140vh ;
 }
 
 .comp-title {
@@ -497,20 +499,17 @@ ul, li {
     font-size: 5vh;
     color: #6679cc;
 }
+.comp-date{
+    grid-row: 2;
+}
 
 .comp-content {
-    grid-row: 2;
+    grid-row: 3;
     overflow-y: scroll;
     word-wrap: break-word;
 }
 
-.comp-more {
-    grid-row: 3;
-    height: 100%;
-    width: 100%;
-    padding-top: 4vh;
-    background-color: rgba(32, 39, 70, 0.9);
-}
+
 
 /*_________________COMPOSITIONS SECTION OVER________________*/
 /*_________________ABOUT SECTION STARTS_____________________*/

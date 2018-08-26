@@ -89,15 +89,12 @@
 <section class="compositions" id="compositions">
     <div class="compositions1">
         <div class="comp" style="{{ data['c']['font-size'] }};{{ data['c']['align'] }};{{ data['c']['color'] }}">
-        <span class="comp-title">
-        {{ data['c']['title'] | safe }}
-        </span><br>
-            <drk>{{ data['c']['date'] }}</drk>
+        <span class="comp-title">{{ data['c']['title'] | safe }}</span><br>
+            <drk class="comp-date">{{ data['c']['date'] }}</drk>
             <br>
             <p class="comp-content">
                 {{ data['c']['content'] | safe }}
             </p>
-            <a class="comp-more" style="color: darkorange" href="{{ data['c']['more-url'] }}">More...</a>
 
         </div>
     </div>

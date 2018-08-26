@@ -11,31 +11,31 @@
 <body class="mn-grid">
 {#_____________LOGIN_____________#}
 {% if not session['user'] == 'adisha' %}
-<div class="blocker" role="dialog">
-    <form class="login_form">
-        <div class="input-group input-group-lg logname">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="user">Username</span>
+    <div class="blocker" role="dialog">
+        <form class="login_form">
+            <div class="input-group input-group-lg logname">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="user">Username</span>
+                </div>
+                <div>
+                    <input id="login-name" type="text" aria-label="Username"
+                           aria-describedby="user" value="adisha"
+                           required="required" name="login-name" autocomplete="username">
+                </div>
             </div>
-            <div>
-                <input id="login-name" type="text" aria-label="Username"
-                       aria-describedby="user" value="adisha"
-                       required="required" name="login-name" autocomplete="username">
+            <div class="input-group input-group-lg logpass">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="pass">Password</span>
+                </div>
+                <div>
+                    <input id="login-pass" type="password" aria-label="Password"
+                           aria-describedby="pass" autocomplete="current-password"
+                           required="required" name="login-pass" placeholder="Password">
+                </div>
             </div>
-        </div>
-        <div class="input-group input-group-lg logpass">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="pass">Password</span>
-            </div>
-            <div>
-                <input id="login-pass" type="password" aria-label="Password"
-                       aria-describedby="pass" autocomplete="current-password"
-                       required="required" name="login-pass" placeholder="Password">
-            </div>
-        </div>
-        <button id="logbutton" class="btn btn-primary" type="button">Login</button>
-    </form>
-</div>
+            <button id="logbutton" class="btn btn-primary" type="button">Login</button>
+        </form>
+    </div>
 {% endif %}
 
 {#_____________HEAD______________#}
@@ -58,10 +58,11 @@
             Please do pay attention to the '/' symbol in the close tag
         </li>
         <li>
-            Ignore the &lt; br &gt; tags, for a new line just press enter or go to the new line as usual
+            Ignore the &lt; br &gt; tags, for a new line just press enter or go to the new line as usual. I will spawn the new ones myself.
         </li>
         <li>
-            The heights of elements in the main page aren't dynamic as of now.. if there is some content which overflows, justlet me know, it's damn simple to make it scrollable
+            The heights of elements in the main page aren't dynamic as of now.. if there is some content which
+            overflows, justlet me know, it's damn simple to make it scrollable
         </li>
         <li>
             You find an error/need a change in design/new colors anything, YOU TELL ME.
@@ -208,6 +209,19 @@
     let socket = io.connect();
     socket.on('connect', function () {
         socket.emit('init', {data: 'I\'m Connected to Manage!!'});
+
+        socket.emit('inSess', function (val) {
+            if (val) {
+                console.log('in Session');
+                $('.blocker').css({
+                    display: 'None'
+                })
+            }
+            else {
+                console.log('No Session');
+            }
+
+        })
     });
     jQuery('.clk').click(function (e) {
         e.preventDefault();
@@ -224,17 +238,17 @@
         toast()
     });
     $('#logbutton').click(function (evt) {
-        data = [$("#login-name").val(), $('#login-pass').val()]
+        data = [$("#login-name").val(), $('#login-pass').val()];
         socket.emit('login', data);
         socket.on('reply', function (msg) {
             if (msg == 1) {
-                console.log('Authorized')
+                console.log('Authorized');
                 $('div.blocker').css({
                     display: 'None  '
                 })
             }
             else {
-                console.log('Sorry, not the correct words')
+                alert('Sorry, not the correct words')
             }
         })
     });
