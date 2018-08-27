@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f943839c-8525-4396-a1ff-740338d06952" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery-3.3.1.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/socket-1.slim.min.js" beforeDir="false" />
-    </list>
+    <list default="true" id="f943839c-8525-4396-a1ff-740338d06952" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +47,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="15" />
           <entry key="jpeg" value="3" />
           <entry key="jpg" value="3" />
@@ -93,6 +67,7 @@
           <entry key="Image" value="14" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="5" />
           <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="1" />
@@ -103,6 +78,7 @@
         <counts>
           <entry key="Python Console" value="360" />
           <entry key="css" value="8807" />
+          <entry key="gitignore" value="16" />
           <entry key="html" value="10789" />
           <entry key="js" value="3796" />
           <entry key="json" value="610" />
@@ -116,6 +92,7 @@
           <entry key="HTML" value="10789" />
           <entry key="JSON" value="610" />
           <entry key="JavaScript" value="3796" />
+          <entry key="PLAIN_TEXT" value="16" />
           <entry key="Python" value="3655" />
           <entry key="Scratch" value="136" />
         </counts>
@@ -176,11 +153,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/data/data.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
               <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -248,6 +234,7 @@
         <option value="$PROJECT_DIR$/templates/manage.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/data/data.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -279,7 +266,13 @@
             <path>
               <item name="TheBlinkingWord" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheBlinkingWord" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheBlinkingWord" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheBlinkingWord" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,14 +380,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28002214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32864866" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,7 +395,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32972974" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32972974" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32756758" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32756758" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32864866" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -562,6 +554,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
