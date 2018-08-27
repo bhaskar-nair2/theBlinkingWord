@@ -6,6 +6,7 @@ Flask-PyMongo==2.1.0
 Flask-Sessions==0.1.5
 Flask-SocketIO==3.0.1
 greenlet==0.4.14
+gunicorn==19.9.0
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0

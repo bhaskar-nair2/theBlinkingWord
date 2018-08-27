@@ -11,12 +11,13 @@ sess.init_app(app)
 app.secret_key = 'bkhHUo0*&%vulwdb&bhbI&658xYIbibwLUIbk'
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
 
-socket = SocketIO(app, manage_sessions=False)
-Session(app)
+
+# TODO: MAKE THE FONTS LOAD BEFORE THE PRE-LOADER GOES AWAY!!!!!!
 
 #
 # WARNING
 # ON GIT PUSH NEW DATA GETS ERASED!! MAKE SURE YOU PULL BEFORE PUSHING OR SOMETHING LIKE THAT!!!
+# USE GUNICORN SERVER IN CLOUD OTHERWISE SOCKETS WON"T WORK
 # Warning
 #
 

@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f943839c-8525-4396-a1ff-740338d06952" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/static/js/socket-1.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/socket-1.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap4/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery-3.3.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/socket-1.slim.min.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +37,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TheBlinkingWord$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1534974333932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TheBlinkingWord$TheBlinkingWord.coverage" NAME="TheBlinkingWord Coverage Results" MODIFIED="1535308144667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TheBlinkingWord$TheBlinkingWord.coverage" NAME="TheBlinkingWord Coverage Results" MODIFIED="1535311260694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -83,7 +106,7 @@
           <entry key="html" value="10789" />
           <entry key="js" value="3796" />
           <entry key="json" value="610" />
-          <entry key="py" value="3172" />
+          <entry key="py" value="3295" />
           <entry key="sql" value="136" />
         </counts>
       </usages-collector>
@@ -93,7 +116,7 @@
           <entry key="HTML" value="10789" />
           <entry key="JSON" value="610" />
           <entry key="JavaScript" value="3796" />
-          <entry key="Python" value="3532" />
+          <entry key="Python" value="3655" />
           <entry key="Scratch" value="136" />
         </counts>
       </usages-collector>
@@ -104,15 +127,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477">
-              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <marker date="1535305824654" expanded="true" signature="610:880" ph="..." />
-                <marker date="1535305824654" expanded="true" signature="736:880" ph="..." />
-                <marker date="1535305824654" expanded="true" signature="877:880" ph="..." />
-                <marker date="1535305824654" expanded="true" signature="917:918" ph="..." />
-                <marker date="1535305824654" expanded="true" signature="1704:1906" ph="..." />
+                <marker date="1535312743427" expanded="true" signature="678:948" ph="..." />
+                <marker date="1535312743427" expanded="true" signature="804:948" ph="..." />
+                <marker date="1535312743427" expanded="true" signature="945:948" ph="..." />
+                <marker date="1535312743427" expanded="true" signature="985:986" ph="..." />
+                <marker date="1535312743427" expanded="true" signature="1772:1974" ph="..." />
               </folding>
             </state>
           </provider>
@@ -132,10 +155,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="406">
               <caret line="207" column="188" selection-start-line="207" selection-start-column="188" selection-end-line="207" selection-end-column="188" />
               <folding>
                 <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
@@ -148,16 +171,16 @@
         <entry file="file://$PROJECT_DIR$/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-36">
-              <caret line="479" column="17" lean-forward="true" selection-start-line="479" selection-start-column="17" selection-end-line="479" selection-end-column="17" />
+              <caret line="479" column="17" selection-start-line="479" selection-start-column="17" selection-end-line="479" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/data/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3275" selection-start-column="3275" selection-end-column="3275" />
+            <state relative-caret-position="465">
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -219,12 +242,12 @@
         <option value="$PROJECT_DIR$/static/data/package.json" />
         <option value="$PROJECT_DIR$/static/js/script.js" />
         <option value="$PROJECT_DIR$/wsgi.py" />
-        <option value="$PROJECT_DIR$/static/data/data.json" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/js/socket-1.slim.min.js" />
         <option value="$PROJECT_DIR$/templates/manage.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/static/data/data.json" />
       </list>
     </option>
   </component>
@@ -252,17 +275,6 @@
             <path>
               <item name="TheBlinkingWord" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheBlinkingWord" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheBlinkingWord" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheBlinkingWord" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheBlinkingWord" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheBlinkingWord" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheBlinkingWord" type="b2602c69:ProjectViewProjectNode" />
@@ -364,8 +376,18 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28002214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -376,7 +398,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32972974" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32972974" />
@@ -480,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3275" selection-start-column="3275" selection-end-column="3275" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -497,22 +512,7 @@
     <entry file="file://$PROJECT_DIR$/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
-          <caret line="479" column="17" lean-forward="true" selection-start-line="479" selection-start-column="17" selection-end-line="479" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1535305824654" expanded="true" signature="610:880" ph="..." />
-            <marker date="1535305824654" expanded="true" signature="736:880" ph="..." />
-            <marker date="1535305824654" expanded="true" signature="877:880" ph="..." />
-            <marker date="1535305824654" expanded="true" signature="917:918" ph="..." />
-            <marker date="1535305824654" expanded="true" signature="1704:1906" ph="..." />
-          </folding>
+          <caret line="479" column="17" selection-start-line="479" selection-start-column="17" selection-end-line="479" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -535,11 +535,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
+        <state relative-caret-position="406">
           <caret line="207" column="188" selection-start-line="207" selection-start-column="188" selection-end-line="207" selection-end-column="188" />
           <folding>
             <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1535312743427" expanded="true" signature="678:948" ph="..." />
+            <marker date="1535312743427" expanded="true" signature="804:948" ph="..." />
+            <marker date="1535312743427" expanded="true" signature="945:948" ph="..." />
+            <marker date="1535312743427" expanded="true" signature="985:986" ph="..." />
+            <marker date="1535312743427" expanded="true" signature="1772:1974" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
         </state>
       </provider>
     </entry>
