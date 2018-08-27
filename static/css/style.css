@@ -183,7 +183,7 @@ drk {
 }
 
 #app {
-    font-family: Antro-B;
+    font-family: Antro-B, cursive;
     word-spacing: 80vw;
     font-size: 18vw;
     color: #f5f0f0;
@@ -218,7 +218,7 @@ ul, li {
 }
 
 .link {
-    font-family: Antro;
+    font-family: Antro, cursive;
     color: #f5f0f0;
     font-size: 5vw;
     text-shadow: 2px 2px 8px #f5f0f0;
@@ -248,7 +248,7 @@ ul, li {
     font-size: 2.8vh;
     color: rgba(200, 186, 186, 0.73);
     text-align: center;
-    font-family: khand;
+    font-family: khand, serif;
 }
 
 .chevron {
@@ -362,7 +362,7 @@ ul, li {
     height: inherit;
     width: inherit;
     font-size: 3vh;
-    font-family: khand;
+    font-family: khand, serif;
     overflow-y: scroll;
 }
 
@@ -387,14 +387,14 @@ ul, li {
     height: inherit;
     width: inherit;
     font-size: 3vh;
-    font-family: khand;
+    font-family: khand, serif;
     overflow-y: scroll;
 }
 
 /*_________________MUSING SECTION OVER______________*/
 
 .head {
-    font-family: Scriptin;
+    font-family: Scriptin, cursive;
     margin-top: 5vh;
     margin-bottom: 5vh;
     text-align: center;
@@ -431,7 +431,7 @@ ul, li {
 }
 
 .rh1 {
-    font-family: khand;
+    font-family: khand, serif;
     padding-right: 1vh;
     padding-left: 1vh;
     height: 100%;
@@ -454,7 +454,7 @@ ul, li {
 }
 
 .rh2 {
-    font-family: khand;
+    font-family: khand, serif;
     padding-right: 1vh;
     padding-left: 1vh;
     height: 100%;
@@ -481,7 +481,7 @@ ul, li {
 }
 
 .comp {
-    font-family: khand;
+    font-family: khand, serif;
     font-size: 3vh;
     background-color: #202746;
     color: #87cefa;
@@ -491,7 +491,7 @@ ul, li {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 10vh 4vh 140vh ;
+    grid-template-rows: 10vh 4vh 140vh;
 }
 
 .comp-title {
@@ -499,7 +499,8 @@ ul, li {
     font-size: 5vh;
     color: #6679cc;
 }
-.comp-date{
+
+.comp-date {
     grid-row: 2;
 }
 
@@ -508,8 +509,6 @@ ul, li {
     overflow-y: scroll;
     word-wrap: break-word;
 }
-
-
 
 /*_________________COMPOSITIONS SECTION OVER________________*/
 /*_________________ABOUT SECTION STARTS_____________________*/
@@ -558,7 +557,7 @@ ul, li {
 .abTitle {
     color: #202746;
     grid-area: title;
-    font-family: Antro-B;
+    font-family: Antro-B, cursive;
     font-size: 3.5vh;
     padding-right: 3vh;
     padding-top: 2vh;
@@ -567,7 +566,7 @@ ul, li {
 }
 
 .under {
-    font-family: khand;
+    font-family: khand, serif;
     font-size: 2vh;
     color: #202746;
 }
@@ -575,7 +574,7 @@ ul, li {
 .abAuth {
     grid-area: auth;
     color: #202746;
-    font-family: Antro-B;
+    font-family: Antro-B, cursive;
     font-size: 3.5vh;
     padding-right: 3vh;
     padding-top: 8vh;

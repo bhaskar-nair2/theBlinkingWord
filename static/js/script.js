@@ -3,10 +3,10 @@ $(document).ready(function () {
     $('#hero').css({
         'height': '100%',
         'width': '100%',
-        'grid-template-rows': '[typer]60vh [links]25vh [dwn]15vh'
+        'grid-template-rows': '[typer]55vh [links]25vh [dwn]15vh'
     });
     $('#app-holder').css({
-        'margin-top': 25 + 'vh'
+        'margin-top': 20 + 'vh'
     });
     $('#link-holder').css({
         'margin-top': 13 + 'vh'
@@ -116,9 +116,9 @@ $(document).on("scroll", function () {
         if (scrollTop < 10) {
             //MAX VALUES
             lineHeight = 15;
-            marginTop = 25;
+            marginTop = 20;
             linkMargin = 13;
-            typer = 60;
+            typer = 55;
             link = 25;
             dwn = 15;
         }
@@ -135,8 +135,8 @@ $(document).on("scroll", function () {
             //MAX - F(scrollTop)/(p1-p2) * (MAX-MIN)
             lineHeight = 15 - ((scrollTop - 10) / 990 * 7);
             appHeight = 60;
-            marginTop = 25 - ((scrollTop - 10) / 990 * 18);
-            typer = 60 - ((scrollTop - 10) / 990 * 30);
+            marginTop = 20 - ((scrollTop - 10) / 990 * 15);
+            typer = 55 - ((scrollTop - 10) / 990 * 25);
             link = 25 - ((scrollTop - 10) / 990 * 15);
             dwn = 15 - ((scrollTop - 10) / 990 * 10);
             linkMargin = 13 - ((scrollTop - 10) / 990 * 12);
