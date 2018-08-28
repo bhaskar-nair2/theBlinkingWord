@@ -27,10 +27,13 @@ $(document).ready(function () {
         'display': 'None',
         'transition': 'all 1s ease-in-out'
     });
+});
+
+$(window).on("load", function () {
     StartCtrl()
 });
 
-async function StartCtrl() {
+function StartCtrl() {
     appPLay();
     setTimeout(function () {
         $('.link').css({
